@@ -28,8 +28,9 @@ def check(pw):
     lower = getLower(pw)
     nums = getNums(pw)
     return len(upper) > 0 and len(lower) > 0 and len(nums) > 0
-'''
+
 # returns password strength rating from scale of 1-10
+# for some reason you can't get 2 but everything else works
 def strength(pw):
     if not check(pw):
         return 1
@@ -46,4 +47,3 @@ def strength(pw):
     if rating > 10:
         return 10
     return rating
-'''
